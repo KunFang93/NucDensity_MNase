@@ -66,7 +66,7 @@ tail -n +23 mES_WT_ctr_Gathering.like_bed > mES_WT_ctr.tsv
 ```
 
 ### Step3: Nucleosome density measurement
-* **step3.1**: measure the nucleosome density and occupancy (mm10 origins.bed and gene.txt is stored in the repo)
+* **step3.1**: measure the nucleosome density and occupancy (mm10 origins.bed and gene.txt are provided in the repo)
 ```
 python NucDensity_cli_v1.py \
     -n Ctrl:/path/to/ctrl.tsv \
