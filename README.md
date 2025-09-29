@@ -2,7 +2,7 @@
 Calculate nucleosome density from MNase
 
 # Required environment
-Please use conda environment miniconda[https://www.anaconda.com/docs/getting-started/miniconda/main]
+Please use conda environment [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main)  
 Make sure these tools are installed in your conda
 ```
 snakemake
@@ -11,6 +11,12 @@ trim_galore
 bwa
 samtools
 picard
+```
+and these python packages need to be install
+```
+pandas
+numpy
+seaborn
 ```
 
 # Tutorial
