@@ -65,8 +65,22 @@ bash likewig2bigwig_mm10.sh mES_WT_ctr mm10.chrom.size
 tail -n +23 mES_WT_ctr_Gathering.like_bed > mES_WT_ctr.tsv
 ```
 
-### Nucleosome density measurement
-
+### Step3: Nucleosome density measurement
+* step3.1 measure the nucleosome density and occupancy (mm10 origins.bed and gene.txt is stored in the repo)
+```
+python NucDensity_cli_v1.py \
+    -n Ctrl:/path/to/ctrl.tsv \
+    -n IAA:/path/to/iaa.tsv \
+    -n WT:/path/to/wt.tsv \
+    -b Ctrl:/path/to/ctrl.bigWig \
+    -b IAA:/path/to/iaa.bigWig \
+    -b WT:/path/to/wt.bigWig \
+    -o origins.bed \
+    -g genes.txt \
+    -w 10000,50000,100000 \
+    -d output_directory
+```
+If any bug pop up, please contact me :)
 
 ### Contact
 Kun Fang: kf2799@cumc.columbia.edu
