@@ -35,10 +35,7 @@ For paired-end data, use MNase_PE.smk
 ```
 snakemake -s MNase_PE.smk --configfile config.yaml --cores 10 -p
 ```
-For single-end data, use MNase_SE.v2.smk
-```
-snakemake -s MNase_SE.smk --configfile config.yaml --cores 10 -p
-```
+For single-end data, contact me
 
 ### Nucleosome calling (bam to nucleosome.bed)
 
