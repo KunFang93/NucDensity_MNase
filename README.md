@@ -3,7 +3,7 @@ Calculate nucleosome density from MNase
 
 ## Required environment
 Please use conda environment [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main)  
-Make sure these tools are installed in your conda
+Make sure these tools are installed in your conda for __Step1__ and Step2
 ```
 snakemake
 deeptools
@@ -13,11 +13,14 @@ samtools
 picard
 bedtools
 ```
-and these python packages need to be install
+and these python packages need to be install when run Step3
 ```
 pandas
 numpy
 seaborn
+pybedtools
+pyBigWig
+click
 ```
 
 ## Tutorial
@@ -62,7 +65,7 @@ bash likewig2bigwig_mm10.sh mES_WT_ctr mm10.chrom.size
 tail -n +23 mES_WT_ctr_Gathering.like_bed > mES_WT_ctr.tsv
 ```
 
-### Nucleosome density measure
+### Nucleosome density measurement
 
 
 ### Contact
