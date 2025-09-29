@@ -1,3 +1,0 @@
-sample_id	R1	R2
-mES_WT_ctr	/path/mES_WT_ctr_BrdU_1.fq.gz	/path/mES_WT_ctr_BrdU_2.fq.gz
-mES_WT_IAA	/path/mES_WT_IAA_BrdU_1.fq.gz	/path/mES_WT_IAA_BrdU_2.fq.gz
