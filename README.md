@@ -77,7 +77,7 @@ python NucDensity_cli_v1.py \
     -b WT:/path/to/wt.bigWig \
     -o origins.bed \
     -g genes.txt \
-    -w 10000,50000,100000 \
+    -w 1000,10000,50000,100000 \
     -d output_directory
 ```
 If any bug pop up, please contact me :)
