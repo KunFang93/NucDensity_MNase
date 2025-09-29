@@ -1,0 +1,27 @@
+## !! Replace all   /path/to** to your own specific FULL PATHs
+## !! setup all other parameters accordingly !!
+
+#########################################
+## PATH for pipeline and working diretor
+## for enclosed packages failed to be autimatically installed by conda, like MEDStrand
+work_dir: /path/results            # allowing submit
+
+#################################
+## Samples Sequencing information
+## Make sure using the full PATH of FASTQ files in the sample.tsv!!
+samples: /path/mm10_samples.txt
+paired-end: True
+
+
+threads: 40
+MAPQ: 0
+
+species: mouse
+##################################################################
+## reference manifest table and bsgenome name for primary genome
+ref_files: /path/mm10.tsv
+
+
+####################
+## other parameters
+binsize: 1000       ## bin size for generate bigwig
