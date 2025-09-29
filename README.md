@@ -30,7 +30,9 @@ bwa index mm10_no_alt_analysis_set_ENCODE.fasta.gz
 * Prepare these three files: **samples.txt**, **ref.tsv** and **config.yaml**  
 
 The repo contains the template for these three files, you can download it and revise their contents accordingly  
+
 **Note**: if you have biological replicates, you could combine them at fastq-level (use cat) or bam-level (samtools merge); for simplicity, we combined at fastq-level; but theoritically, you should check the correlation of two replicates first (deeptools in bam-level) before combining.
+
 * Run snakemake pipeline
 For paired-end data, use MNase_PE.smk
 ```
