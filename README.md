@@ -57,6 +57,10 @@ python iNPS_V1.2.3.py -i mES_WT_ctr_dedup_filt.bed -o wt_ctr/mES_WT_ctr --s_p s
 ```
 bash likewig2bigwig_mm10.sh mES_WT_ctr mm10.chrom.size
 ```
+* **step2.4**: converte Gathering.like_bed into tsv format
+```
+tail -n +23 mES_WT_ctr_Gathering.like_bed > mES_WT_ctr.tsv
+```
 
 ### Nucleosome density measure
 
