@@ -53,7 +53,7 @@ shuf -n 55563772 mES_WT_ctr_dedup_filt.bed > mES_WT_ctr_dedup_filt_downsampled.b
 ```
 python iNPS_V1.2.3.py -i mES_WT_ctr_dedup_filt.bed -o wt_ctr/mES_WT_ctr --s_p s
 ```
-* convert like_wig into bigwig
+* convert like_wig into bigwig, make sure the prefix is the same with the run iNPS step
 ```
 bash likewig2bigwig_mm10.sh mES_WT_ctr mm10.chrom.size
 ```
