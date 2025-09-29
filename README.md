@@ -1,7 +1,7 @@
 # NucDensity_MNase
 Calculate nucleosome density from MNase
 
-# Required environment
+## Required environment
 Please use conda environment [miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main)  
 Make sure these tools are installed in your conda
 ```
@@ -19,8 +19,8 @@ numpy
 seaborn
 ```
 
-# Tutorial
-## Mapping (fastq to bam)
+## Tutorial
+### Mapping (fastq to bam)
 * Create BWA index (if you don't have)
 ```
 wget https://www.encodeproject.org/files/mm10_no_alt_analysis_set_ENCODE/@@download/mm10_no_alt_analysis_set_ENCODE.fasta.gz
@@ -35,12 +35,15 @@ For paired-end data, use MNase_PE.smk
 ```
 snakemake -s MNase_PE.smk --configfile config.yaml --cores 10 -p
 ```
+For single-end data, use MNase_SE.v2.smk
+```
+snakemake -s MNase_SE.smk --configfile config.yaml --cores 10 -p
+```
+
+### Nucleosome calling (bam to nucleosome.bed)
+
+### Nucleosome density measure
 
 
-## Nucleosome calling (bam to nucleosome.bed)
-
-## Nucleosome density measure
-
-
-## Contact
+### Contact
 Kun Fang: kf2799@cumc.columbia.edu
