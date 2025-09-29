@@ -34,7 +34,7 @@ The repo contains the template for these three files, you can download it and re
 **Note**: if you have biological replicates, you could combine them at fastq-level (use cat) or bam-level (samtools merge); for simplicity, we combined at fastq-level; but theoritically, you should check the correlation of two replicates first (deeptools in bam-level) before combining.
 
 * Run snakemake pipeline
-For paired-end data, use MNase_PE.smk
+For paired-end data, use MNase_PE.smk (make --cores xx larger if you have more resources)
 ```
 snakemake -s MNase_PE.smk --configfile config.yaml --cores 10 -p
 ```
