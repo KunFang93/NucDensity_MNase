@@ -46,7 +46,8 @@ Then for each sample, do
 * convert bam into bed
 ```
 bedtools bamtobed -i /work_dir/filtered_bam/mES_WT_ctr_dedup_filt.bam | grep -E '^chr([1-9]|1[0-9]|X|Y)[[:space:]]' - > mES_WT_ctr_dedup_filt.bed
-# to make comparable bigwig later on, you might need to make the number 
+# to make comparable bigwig later on, you might need to make the number of row in input.bed the same across different condition
+shuf -n 55563772 mES_WT_ctr_dedup_filt.bed > mES_WT_ctr_dedup_filt_downsampled.bed
 ```
 * run iNPS
 ```
