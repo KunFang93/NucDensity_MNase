@@ -13,5 +13,14 @@ picard
 ```
 
 # Tutorial
-## Mapping
+## Mapping (fastq to bam)
 For paired-end data, use MNase_PE.smk
+
+
+## Nucleosome calling (bam to nucleosome.bed)
+
+## Nucleosome density measure
+
+
+## Contact
+Kun Fang: kf2799@cumc.columbia.edu
