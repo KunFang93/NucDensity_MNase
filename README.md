@@ -21,7 +21,13 @@ seaborn
 
 # Tutorial
 ## Mapping (fastq to bam)
+Before mapping, please prepare these three files: **mm10_samples.txt**, **mm10.tsv** and **config.yaml**  
+The repo contains the template for these three files, you can download it and revise their contents accordingly  
+
 For paired-end data, use MNase_PE.smk
+```
+snakemake -s MNase_PE.smk --configfile config.yaml --cores 10 -p
+```
 
 
 ## Nucleosome calling (bam to nucleosome.bed)
