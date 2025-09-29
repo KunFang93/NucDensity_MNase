@@ -26,11 +26,11 @@ seaborn
 wget https://www.encodeproject.org/files/mm10_no_alt_analysis_set_ENCODE/@@download/mm10_no_alt_analysis_set_ENCODE.fasta.gz
 bwa index mm10_no_alt_analysis_set_ENCODE.fasta.gz
 ```
-Before mapping, please prepare these three files: **mm10_samples.txt**, **mm10.tsv** and **config.yaml**  
-
+* Prepare these three files: **mm10_samples.txt**, **mm10.tsv** and **config.yaml**  
 
 The repo contains the template for these three files, you can download it and revise their contents accordingly  
 
+* Run snakemake pipeline
 For paired-end data, use MNase_PE.smk
 ```
 snakemake -s MNase_PE.smk --configfile config.yaml --cores 10 -p
